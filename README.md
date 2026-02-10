@@ -29,7 +29,7 @@ kelpie-web-services/
 │
 ├── assets/
 │   └── images/
-│       ├── logo-circle.webP       # Kelpie logo
+│       ├── logo-circle.webp       # Kelpie logo
 │       └── (other images as needed)
 │
 └── README.md              # This file
