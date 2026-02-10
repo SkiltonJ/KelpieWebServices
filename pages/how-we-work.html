@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about our 5-phase website development process from discovery to post-launch support.">
+  <title>How We Work - Kelpie Web Services</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="../assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors border-b-2 border-deep-teal pb-1">How
+            We Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            a Discovery Call</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">How We Work</h1>
+        <p class="text-xl text-gray-100 max-w-3xl">
+          Building a website shouldn't be stressful. Here's exactly what to expect when you work with Kelpie Web
+          Services.
+        </p>
+      </div>
+    </section>
+
+    <!-- Phase 1: Discovery -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="bg-deep-teal text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate">Phase 1: Discovery</h2>
+              <p class="text-xl text-slate font-semibold">Week 1</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">We start with a free discovery call.</h3>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            This is a 60-minute conversation to make sure we're the right fit for each other. We'll cover:
+          </p>
+
+          <ul class="space-y-2 text-slate mb-8 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>What you need and what we offer</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Pricing and project scope</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Timeline expectations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>How we'll communicate throughout the project</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Whether you need photography and copywriting, or if you already have content ready</span>
+            </li>
+          </ul>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            <strong>No charge for the discovery call.</strong> If we're a good fit, we move forward. If not, no hard
+            feelings.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">What we need from you:</h3>
+          <ul class="space-y-2 text-slate ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Access to any existing branding or website materials</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Content (or let us know if you need us to create it)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Key stakeholders identified for approvals</span>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-deep-teal to-warm-sand h-1"></div>
+
+    <!-- Phase 2: Design & Planning -->
+    <section class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-sunset-orange">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="bg-deep-teal text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate">Phase 2: Design & Planning</h2>
+              <p class="text-xl text-slate font-semibold">Weeks 2-4</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">We turn your vision into a visual direction.</h3>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            We'll create two high-fidelity design concepts: one that plays it safe, and one that pushes a little. You'll
+            see exactly what your website will look like before we write a single line of code.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">Design process:</h3>
+          <ul class="space-y-2 text-slate mb-6 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>High-fidelity mockups in Figma</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Review and feedback session</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Revisions based on your input</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Final design approval</span>
+            </li>
+          </ul>
+
+          <p class="text-lg text-slate leading-relaxed">
+            <strong>Weekly check-ins</strong> keep you in the loop. No surprises, no waiting months to see progress.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-warm-sand to-sunset-orange h-1"></div>
+
+    <!-- Phase 3: Development -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="bg-deep-teal text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate">Phase 3: Development</h2>
+              <p class="text-xl text-slate font-semibold">Weeks 5-8</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">We build your website.</h3>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            Once the design is approved, we'll build your site on the platform that best fits your needs. You'll see
+            progress at regular intervals, and we'll have weekly check-ins to make sure everything is on track.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">What happens if scope changes?</h3>
+          <p class="text-lg text-slate leading-relaxed">
+            If you need to add pages or features that weren't in the original plan, we'll pause, reassess, and provide a
+            new quote. No scope creep, no surprise invoices.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-sunset-orange to-deep-teal h-1"></div>
+
+    <!-- Phase 4: Review & Launch -->
+    <section class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-sunset-orange">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="bg-deep-teal text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+              4
+            </div>
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate">Phase 4: Review & Launch</h2>
+              <p class="text-xl text-slate font-semibold">Week 9-10</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">We make sure everything works before we go live.</h3>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            Before launch, we run through a comprehensive pre-launch checklist:
+          </p>
+
+          <ul class="space-y-2 text-slate mb-8 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>WCAG 2.2 compliance testing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Performance and security checks</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Cross-browser and mobile testing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Content review and final edits</span>
+            </li>
+          </ul>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">Launch day:</h3>
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            We handle everything. DNS, hosting migration, final checks—you don't need to lift a finger.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">Training and handover:</h3>
+          <p class="text-lg text-slate leading-relaxed mb-4">You'll receive:</p>
+          <ul class="space-y-2 text-slate ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Recorded training videos</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Comprehensive PDF handbook (how-tos, passwords, troubleshooting)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Organised folders of all images and copy</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Direct line to us for questions</span>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-deep-teal to-warm-sand h-1"></div>
+
+    <!-- Phase 5: Post-Launch Support -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="bg-deep-teal text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+              5
+            </div>
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate">Phase 5: Post-Launch Support</h2>
+              <p class="text-xl text-slate font-semibold">2 Weeks</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">We don't just hand over the keys and disappear.</h3>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            For two weeks after launch, you have unlimited support for any issues or small fixes. Found a typo? Button
+            not working? Something doesn't look right on mobile? Forward it to us and we'll fix it ASAP.
+          </p>
+
+          <p class="text-lg text-slate leading-relaxed">
+            After the two-week period, ongoing support is available on an hourly basis or through a monthly retainer.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Ongoing Support Options -->
+    <section class="py-20 lg:py-28 bg-off-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-8">Ongoing Support Options</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="bg-white p-8 rounded-lg border-2 border-deep-teal">
+            <h3 class="text-xl font-bold text-slate mb-3">Hourly rate</h3>
+            <p class="text-3xl font-bold text-deep-teal mb-4">$150-200/hour</p>
+            <p class="text-slate">For ad-hoc requests</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg border-2 border-sunset-orange">
+            <h3 class="text-xl font-bold text-slate mb-3">Monthly retainer packages</h3>
+            <ul class="space-y-2 text-slate">
+              <li><strong>Basic:</strong> 5 hours/month</li>
+              <li><strong>Standard:</strong> 10 hours/month</li>
+              <li><strong>Premium:</strong> 20 hours/month</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-lg text-slate leading-relaxed">
+          Retainers give you priority response times and better value if you need frequent updates or support.
+        </p>
+      </div>
+    </section>
+
+    <!-- What Makes a Project Successful -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-8">What makes a project successful?</h2>
+
+        <p class="text-lg text-slate leading-relaxed mb-6">
+          To us, a successful project is simple:
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-deep-teal text-white p-8 rounded-lg text-center">
+            <div class="text-5xl mb-4">✓</div>
+            <h3 class="text-xl font-bold mb-2">Delivered on time</h3>
+          </div>
+          <div class="bg-deep-teal text-white p-8 rounded-lg text-center">
+            <div class="text-5xl mb-4">✓</div>
+            <h3 class="text-xl font-bold mb-2">Delivered on budget</h3>
+          </div>
+          <div class="bg-deep-teal text-white p-8 rounded-lg text-center">
+            <div class="text-5xl mb-4">✓</div>
+            <h3 class="text-xl font-bold mb-2">You'd happily recommend us</h3>
+          </div>
+        </div>
+
+        <p class="text-lg text-slate leading-relaxed mt-8">
+          That's it. No over-promising, no under-delivering. Just solid work, clear communication, and a website you're
+          proud of.
+        </p>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 lg:py-24 bg-deep-teal text-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to get started?</h2>
+        <p class="text-xl text-gray-100 mb-8">
+          Book a free 60-minute discovery call to discuss your project.
+        </p>
+        <a href="contact.html"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          Book a Discovery Call
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="../assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

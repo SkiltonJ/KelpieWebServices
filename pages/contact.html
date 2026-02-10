@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Get in touch with Kelpie Web Services. Book a discovery call or send us a message about your project.">
+  <title>Contact - Kelpie Web Services</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="../assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors border-b-2 border-deep-teal pb-1">Contact</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">Get in Touch</h1>
+        <p class="text-xl text-gray-100 max-w-3xl">
+          Ready to start your project? Have questions about our services? We'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 lg:py-28 bg-off-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl font-bold text-slate mb-8">Send Us a Message</h2>
+
+          <!-- Contact Form -->
+          <form id="contact-form" class="space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+            <!-- Name (Required) -->
+            <div>
+              <label for="name" class="block text-slate font-semibold mb-2">
+                Name <span class="text-sunset-orange">*</span>
+              </label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors"
+                aria-required="true">
+            </div>
+
+            <!-- Email (Required) -->
+            <div>
+              <label for="email" class="block text-slate font-semibold mb-2">
+                Email <span class="text-sunset-orange">*</span>
+              </label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors"
+                aria-required="true">
+            </div>
+
+            <!-- Phone (Optional) -->
+            <div>
+              <label for="phone" class="block text-slate font-semibold mb-2">
+                Phone
+              </label>
+              <input type="tel" id="phone" name="phone"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors">
+            </div>
+
+            <!-- Organization/Company -->
+            <div>
+              <label for="organization" class="block text-slate font-semibold mb-2">
+                Organisation/Company
+              </label>
+              <input type="text" id="organization" name="organization"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors">
+            </div>
+
+            <!-- Project Type (Required) -->
+            <div>
+              <label for="project-type" class="block text-slate font-semibold mb-2">
+                Project Type <span class="text-sunset-orange">*</span>
+              </label>
+              <select id="project-type" name="project-type" required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors bg-white"
+                aria-required="true">
+                <option value="">Select a project type</option>
+                <option value="new-website">New Website</option>
+                <option value="accessibility-audit">Accessibility Audit</option>
+                <option value="website-support">Website Support</option>
+                <option value="not-sure">Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Budget Range -->
+            <div>
+              <label for="budget-range" class="block text-slate font-semibold mb-2">
+                Budget Range
+              </label>
+              <select id="budget-range" name="budget-range"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors bg-white">
+                <option value="">Select a budget range</option>
+                <option value="under-20k">Under $20K</option>
+                <option value="20-40k">$20-40K</option>
+                <option value="40k-plus">$40K+</option>
+                <option value="not-sure">Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Message (Required) -->
+            <div>
+              <label for="message" class="block text-slate font-semibold mb-2">
+                Message <span class="text-sunset-orange">*</span>
+              </label>
+              <textarea id="message" name="message" required rows="6"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors resize-y"
+                aria-required="true"></textarea>
+            </div>
+
+            <!-- How did you hear about us? (Optional) -->
+            <div>
+              <label for="referral-source" class="block text-slate font-semibold mb-2">
+                How did you hear about us?
+              </label>
+              <input type="text" id="referral-source" name="referral-source"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-md focus:border-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal focus:ring-opacity-50 transition-colors"
+                placeholder="e.g., Google search, referral, LinkedIn">
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button type="submit"
+                class="w-full bg-deep-teal text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-deep-teal focus:ring-opacity-50">
+                Send Message
+              </button>
+            </div>
+
+            <!-- Required fields note -->
+            <p class="text-sm text-slate">
+              <span class="text-sunset-orange">*</span> Required fields
+            </p>
+
+          </form>
+
+          <!-- Form status message (hidden by default, shown via JS) -->
+          <div id="form-status" class="hidden mt-6 p-4 rounded-md" role="alert"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate mb-6">What Happens Next?</h2>
+
+        <p class="text-lg text-slate leading-relaxed mb-6">
+          We respond within one business day. You'll hear from us with answers to your questions and next steps for your
+          project.
+        </p>
+
+        <p class="text-lg text-slate leading-relaxed">
+          If we're a good fit, we'll schedule a free 60-minute discovery call to discuss your needs in detail.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Details -->
+    <section class="py-20 lg:py-28 bg-off-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate mb-8">Our Details</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg">
+            <h3 class="font-bold text-slate mb-3 text-xl">Location</h3>
+            <p class="text-lg text-slate">Adelaide, South Australia</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg">
+            <h3 class="font-bold text-slate mb-3 text-xl">Response Time</h3>
+            <p class="text-lg text-slate">Within one business day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 lg:py-24 bg-deep-teal text-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Prefer to book a call directly?</h2>
+        <p class="text-xl text-gray-100 mb-8">
+          Skip the form and schedule your free 60-minute discovery call.
+        </p>
+        <a href="#"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          Book a Discovery Call
+        </a>
+        <p class="text-sm text-gray-300 mt-4">
+          (Scheduling link to be added - Calendly or similar)
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="../assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+  <script src="../js/contact-form.js"></script>
+
+</body>
+
+</html>

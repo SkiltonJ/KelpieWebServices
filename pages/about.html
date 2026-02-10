@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about the founder of Kelpie Web Services and why accessibility matters in web development.">
+  <title>About - Kelpie Web Services</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="../assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors border-b-2 border-deep-teal pb-1">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            a Discovery Call</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">About Kelpie Web Services</h1>
+      </div>
+    </section>
+
+    <!-- From Penfolds to Pixels -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">From Penfolds to pixels</h2>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            I started my career as a cellar hand and winemaker at Penfolds, crafting wine with precision and care. These
+            days, I craft websites with the same attention to detail, but the mission is different: making the digital
+            world accessible and straightforward for everyone who needs it.
+          </p>
+
+          <p class="text-lg text-slate leading-relaxed">
+            I hold a Graduate Diploma in Computer Science and I'm currently completing my Masters. I've worked as a UX
+            professional and frontend developer, building websites for both small businesses and large companies. Along
+            the way, I completed a web development bootcamp and learned that the best websites aren't just technically
+            sound—they're built with real people in mind.
+          </p>
+        </div>
+    </section>
+
+    <!-- Why Accessibility Matters -->
+    <section class="py-20 lg:py-28 bg-deep-teal text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto rounded-lg p-8 lg:p-12 border-2 border-white border-opacity-30">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Why accessibility matters</h2>
+
+          <p class="text-lg text-gray-100 leading-relaxed mb-6">
+            I've worked with and around disability from a young age, and I've seen firsthand how easy it is for
+            organisations to forget entire groups of people when designing digital experiences. Accessibility isn't a
+            checkbox to me. It's about respect, inclusion, and making sure no one gets left behind.
+          </p>
+
+          <p class="text-lg text-gray-100 leading-relaxed">
+            That's why every website I build meets WCAG 2.2 Level AA standards. Not because it's required (though it is
+            now, as of January 2025), but because it's the right thing to do.
+          </p>
+        </div>
+    </section>
+
+    <!-- Meet Muffin -->
+    <section class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-sunset-orange">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Meet Muffin</h2>
+
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            Kelpie Web Services is named after Muffin, my 18-month-old working line Kelpie from New South Wales. She's
+            fiercely intelligent, always ready for work, and aims to please. She loves deeply, works tirelessly, and is
+            obedient and respectful. She's currently laying at my feet as I write this.
+          </p>
+
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            Muffin's the perfect mascot for this business because she embodies the traits I bring to every project:
+            intelligence, attentiveness, loyalty, and drive. She's a working dog, and this is a working partnership.
+          </p>
+
+          <!-- Placeholder for Muffin's photo -->
+          <div class="bg-warm-sand bg-opacity-20 rounded-lg p-12 text-center border-2 border-dashed border-warm-sand">
+            <p class="text-slate italic text-lg">
+              [Photo of Muffin goes here - black and tan working line Kelpie, intelligent and attentive, the inspiration
+              behind Kelpie Web Services]
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Why I Started This -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Why I started this</h2>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            Honestly? I started Kelpie Web Services because I kept seeing government agencies paying $40-80K and waiting
+            6-12 months for websites that should cost half as much and take a quarter of the time.
+          </p>
+
+          <p class="text-lg text-slate leading-relaxed mb-6">
+            It felt predatory. Taxpayer money going to bloated agencies that deliver slowly, communicate poorly, and
+            treat accessibility like an afterthought.
+          </p>
+
+          <p class="text-lg text-slate leading-relaxed">
+            I knew I could do better. Build faster, communicate clearly, charge fairly, and actually deliver websites
+            that work for everyone who needs them. So that's what I'm doing.
+          </p>
+        </div>
+    </section>
+
+    <!-- My Values -->
+    <section class="py-20 lg:py-28 bg-deep-teal text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto rounded-lg p-8 lg:p-12 border-2 border-white border-opacity-30">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-8">My values</h2>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-3">Accessibility</h3>
+              <p class="text-lg text-gray-100 leading-relaxed">
+                Every website I build is WCAG 2.2 Level AA compliant. I maintain a checklist of disabilities and
+                accessibility considerations to make sure I'm designing for everyone, not just the majority.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-3">Transparency</h3>
+              <p class="text-lg text-gray-100 leading-relaxed">
+                You'll always know where your project stands, what you're paying for, and when you'll launch. No
+                surprises, no hidden fees, no corporate runarounds.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-3">Reliability</h3>
+              <p class="text-lg text-gray-100 leading-relaxed">
+                I deliver on time and on budget. If something changes, you'll know immediately. I respect your time and
+                your schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Based in Adelaide -->
+    <section class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Based in Adelaide, serving South Australia</h2>
+
+          <p class="text-lg text-slate leading-relaxed">
+            I work from home in Adelaide and happily serve clients across South Australia, including regional and rural
+            areas. For now, I'm keeping things local—but if you're outside SA and we're a good fit, let's talk.
+          </p>
+        </div>
+    </section>
+
+    <!-- Looking Ahead -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-sunset-orange">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Looking ahead</h2>
+
+          <p class="text-lg text-slate leading-relaxed">
+            In the future, I'd love to build a team that reflects the inclusive values I design for. Teaching web
+            development to people with disabilities and creating meaningful employment opportunities would be the
+            ultimate goal. But first things first: let's build some great websites.
+          </p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 lg:py-24 bg-deep-teal text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Want to work together?</h2>
+        <p class="text-xl text-gray-100 mb-8">
+          Book a free 60-minute discovery call to discuss your project.
+        </p>
+        <a href="contact.html"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          Book a Discovery Call
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="../assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

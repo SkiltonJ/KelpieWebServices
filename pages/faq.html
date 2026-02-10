@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Frequently asked questions about Kelpie Web Services - pricing, timelines, accessibility, and website development process.">
+  <title>FAQ - Kelpie Web Services</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="../assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors border-b-2 border-deep-teal pb-1">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            a Discovery Call</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="services.html" class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+        <p class="text-xl text-gray-100 max-w-3xl">
+          Everything you need to know about working with Kelpie Web Services.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Question 1 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">1. How much does a website cost?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Website costs vary based on complexity, features, and requirements. We don't believe in one-size-fits-all
+            pricing because every project is different.
+          </p>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Government agency websites typically range from $25,000-$40,000 depending on the number of pages, required
+            integrations, and compliance needs. Medium business websites can range from $15,000-$35,000.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            We provide custom quotes after our discovery call when we understand your specific requirements. No hidden
+            fees, no surprise invoices. You'll know exactly what you're paying before we start.
+          </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">2. How long does it take to build a website?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            We deliver production-ready websites in 8-10 weeks from discovery to launch. This includes:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Discovery and planning (1 week)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Design and content development (2-3 weeks)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Website build and development (3-4 weeks)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Review, testing, and launch (1 week)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>2 weeks of post-launch support</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            Most agencies quote 6-12 months. We believe in efficiency without cutting corners. Our timeline is realistic
+            and respects your schedule.
+          </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">3. Will my website meet WCAG 2.2 and Digital Experience Policy
+            standards?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Yes. Every website we build meets:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>WCAG 2.2 Level AA compliance</strong> (required as of January 2025)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Digital Inclusion Standard</strong> (accessible for all users)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Digital Access Standard</strong> (consolidated, easy navigation)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Digital Performance Standard</strong> (monitored, maintained, high-quality)</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            We also build to ISM and PSPF security frameworks for government clients. Compliance isn't a checkbox for
+            us. It's built into every stage of the design and development process.
+          </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">4. Can I update my website myself?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Yes. We build websites on platforms with content management systems (CMS) so you can make updates when you
+            need to.
+          </p>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            You'll receive:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Recorded training videos</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Comprehensive PDF handbook with step-by-step instructions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Clear guidance on what you can update safely</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Direct access to us for questions</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            Simple updates like text changes, image swaps, and new blog posts are easy to manage yourself. For larger
+            changes or technical updates, we're here to help.
+          </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">5. What's included in your website package?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Our full website package includes:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Custom website design and development</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>WCAG 2.2 Level AA compliance</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Digital Experience Policy standards implementation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Security framework compliance (ISM/PSPF for government clients)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Brand guidelines for your existing brand</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Copywriting and SEO optimisation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Comprehensive website handbook (passwords, how-tos, troubleshooting)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Organised folders of all images and copy</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Hosting setup (unless you prefer to manage it)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Recorded training videos</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>2 weeks of post-launch support</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            Photography and additional services are available if needed.
+          </p>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">6. Do you work with clients outside Adelaide/South Australia?
+          </h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            We're based in Adelaide and primarily serve South Australian government agencies and businesses, including
+            regional and rural areas.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            For now, we're keeping our focus local to provide the best possible service. If you're outside SA and think
+            we'd be a great fit, get in touch and let's talk.
+          </p>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">7. What happens after my website launches?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            After launch, you receive:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>2 weeks of unlimited post-launch support</strong> for any issues or small fixes</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Comprehensive documentation and training materials</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Direct line to us for questions</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            After the 2-week support period, ongoing maintenance and updates are available on an hourly basis
+            ($150-200/hour) or through monthly retainer packages.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            We don't disappear after launch. We're your long-term digital working partner.
+          </p>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">8. Do you provide hosting?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Yes. We handle hosting setup as part of our website package unless you specifically need or want to manage
+            it yourself.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            We'll recommend secure, reliable hosting appropriate for your site and ensure everything is configured
+            correctly. For government clients, we can work with GovCMS or other approved hosting platforms.
+          </p>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">9. What if I need changes during the project?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            If you need to add pages, features, or functionality that weren't in the original scope, we'll pause,
+            reassess, and provide a new quote before continuing.
+          </p>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            No scope creep, no surprise invoices. You'll always know what changes cost and how they impact the timeline
+            before we proceed.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            Small revisions within the original scope are included. We build in feedback rounds during the design phase
+            to make sure we're on the right track.
+          </p>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">10. Can you help with an existing website or only new builds?
+          </h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            We do both. We offer:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>New website builds</strong> from scratch</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Accessibility audits and compliance upgrades</strong> for existing sites</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Website redesigns and overhauls</strong></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Ongoing support and maintenance</strong> for sites we didn't build</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            If you already have a website that needs to meet the January 2025 compliance deadline, we can audit it,
+            identify issues, and implement the necessary fixes.
+          </p>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">11. Will my website be mobile-friendly?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Absolutely. Every website we build is fully responsive and optimised for smartphones, tablets, and desktops.
+          </p>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Google uses mobile-first indexing, which means your mobile site is what Google uses to rank you in search
+            results. Mobile responsiveness isn't optional. It's essential.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            We test across multiple devices and browsers to ensure your site works beautifully everywhere.
+          </p>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">12. How do we communicate during the project?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            You'll have direct access to your project team through email and scheduled calls. No account managers, no
+            ticket queues.
+          </p>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            We have <strong>weekly check-ins</strong> during the project to keep you updated on progress and address any
+            questions. You'll always know where things stand.
+          </p>
+          <p class="text-lg text-slate leading-relaxed">
+            Our response time is within one business day for all communication.
+          </p>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">13. What do you need from me to get started?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            After our discovery call, we'll need:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Access to any existing branding materials (logo, colours, fonts)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Content (text, images) or let us know if you need us to create it</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Access to any existing website or systems</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Key stakeholders identified for approvals</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            We'll provide a detailed checklist so nothing gets missed. The more prepared you are upfront, the smoother
+            and faster the process.
+          </p>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="mb-12 pb-12 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-slate mb-4">14. Do you offer payment plans?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            Yes. We understand that $25-40K is a significant investment. We can structure payment in milestones:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Deposit on project start</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Payment after design approval</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Payment after development completion</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span>Final payment on launch</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            We're happy to discuss payment structures that work for your budget and procurement processes.
+          </p>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-slate mb-4">15. What platform/CMS do you use?</h2>
+          <p class="text-lg text-slate leading-relaxed mb-4">
+            We choose the best platform for your specific needs. Options include:
+          </p>
+          <ul class="space-y-2 text-slate mb-4 ml-6">
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>WordPress</strong> (most common, highly customisable, SEO-friendly)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Shopify</strong> (if eCommerce is required)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>Custom builds</strong> (for specialised requirements)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-deep-teal font-bold">•</span>
+              <span><strong>GovCMS</strong> (for government clients who require it)</span>
+            </li>
+          </ul>
+          <p class="text-lg text-slate leading-relaxed">
+            We'll recommend the platform that best fits your goals, technical requirements, and budget. You'll
+            understand why we're recommending it and how it benefits your business.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="py-20 lg:py-24 bg-off-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Still Have Questions?</h2>
+        <p class="text-xl text-slate mb-8">
+          We're here to help. Get in touch and we'll answer anything we haven't covered here.
+        </p>
+        <a href="contact.html"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="../assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+  <script src="../js/faq-accordion.js"></script>
+
+</body>
+
+</html>

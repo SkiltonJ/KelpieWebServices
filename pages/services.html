@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Premium web development, accessibility audits, and ongoing support for South Australian government agencies and businesses.">
+  <title>Our Services - Kelpie Web Services</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="../index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="../assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="services.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors border-b-2 border-deep-teal pb-1">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            a Discovery Call</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="services.html"
+            class="text-deep-teal hover:text-opacity-80 font-semibold transition-colors">Services</a>
+          <a href="how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">Our Services</h1>
+        <p class="text-xl text-gray-100 max-w-3xl">
+          Premium web solutions for South Australian government agencies and medium businesses. We deliver accessible,
+          secure websites that meet 2025 standards without the agency price tag or endless delays.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service 1: Government Website Development -->
+    <section id="government-development" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Government Website Development</h2>
+          <p class="text-xl text-slate mb-8 font-semibold">Build it right the first time.</p>
+
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            We create production-ready websites that meet all three Digital Experience Policy standards: Digital
+            Inclusion, Digital Access, and Digital Performance. Full WCAG 2.2 Level AA compliance, built on secure
+            frameworks that adhere to ISM and PSPF requirements.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">What's included:</h3>
+          <ul class="space-y-3 text-slate mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Complete website design and development</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>WCAG 2.2 Level AA compliance</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Digital Experience Policy standards implementation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Security framework compliance (ISM/PSPF)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Brand guidelines for your existing brand</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Comprehensive website handbook (passwords, how-tos, troubleshooting)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Organised folders of all images and copy</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Hosting setup (unless you prefer to handle it)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Recorded training videos and written documentation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>2 weeks of post-launch support</span>
+            </li>
+          </ul>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg">
+              <h4 class="font-bold text-slate mb-2">Timeline:</h4>
+              <p class="text-slate">8-10 weeks from discovery to launch</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg">
+              <h4 class="font-bold text-slate mb-2">Pricing:</h4>
+              <p class="text-slate">Custom quotes based on project scope. Book a discovery call to discuss your
+                requirements.</p>
+            </div>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-8 py-3 rounded-md hover:bg-opacity-90 font-semibold transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-deep-teal to-warm-sand h-1"></div>
+
+    <!-- Service 2: Website Accessibility Audits & Compliance -->
+    <section id="accessibility-audits" class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-sunset-orange">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Website Accessibility Audits & Compliance</h2>
+          <p class="text-xl text-slate mb-8 font-semibold">Already have a website? We'll make sure it meets the
+            standards.</p>
+
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            Comprehensive accessibility audits using both automated tools and manual testing. You'll receive a detailed
+            report with prioritised issues and clear guidance on how to fix them.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">What's included:</h3>
+          <ul class="space-y-3 text-slate mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Automated and manual WCAG 2.2 testing</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Detailed PDF report with prioritised issues</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Clear explanations of each problem</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Recommendations for fixes (with simple step-by-step guidance where possible)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>You can implement fixes yourself or hire us for remediation</span>
+            </li>
+          </ul>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-off-white p-6 rounded-lg">
+              <h4 class="font-bold text-slate mb-2">Timeline:</h4>
+              <p class="text-slate">Typically completed within one week for standard websites</p>
+            </div>
+            <div class="bg-off-white p-6 rounded-lg">
+              <h4 class="font-bold text-slate mb-2">Pricing:</h4>
+              <p class="text-slate">Custom quotes based on site size and complexity. Book a discovery call to discuss
+                your requirements.</p>
+            </div>
+          </div>
+
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-8 py-3 rounded-md hover:bg-opacity-90 font-semibold transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="bg-gradient-to-r from-warm-sand to-sunset-orange h-1"></div>
+
+    <!-- Service 3: Ongoing Support & Maintenance -->
+    <section id="ongoing-support" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto bg-off-white rounded-lg shadow-md p-8 lg:p-12 border-l-4 border-deep-teal">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-6">Ongoing Website Support & Maintenance</h2>
+          <p class="text-xl text-slate mb-8 font-semibold">Your digital working partner, on call when you need us.</p>
+
+          <p class="text-lg text-slate leading-relaxed mb-8">
+            We keep your site secure, updated, and running smoothly. Security patches, content updates, performance
+            monitoring—we handle it so you can focus on your mission.
+          </p>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">What's included:</h3>
+          <ul class="space-y-3 text-slate mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Security updates and patches (maintenance)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Performance monitoring guidance (we'll teach you how)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Content changes and updates (new work, quoted separately)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>24-hour response time for support requests</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-deep-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Direct access to your project team</span>
+            </li>
+          </ul>
+
+          <h3 class="text-2xl font-bold text-slate mb-4">Pricing structure:</h3>
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg border-2 border-deep-teal">
+              <h4 class="font-bold text-slate mb-2 text-lg">Hourly</h4>
+              <p class="text-2xl font-bold text-deep-teal mb-2">$150-200/hour</p>
+              <p class="text-slate">For ad-hoc requests</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border-2 border-sunset-orange">
+              <h4 class="font-bold text-slate mb-2 text-lg">Retainer packages</h4>
+              <p class="text-slate mb-2">Available for frequent support needs</p>
+              <p class="text-slate"><strong>Monthly retainers start from 5 hours/month</strong></p>
+            </div>
+          </div>
+
+          <p class="text-slate mb-12">
+            As your needs grow, we can transition you to a retainer model for better value and priority support.
+          </p>
+
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-8 py-3 rounded-md hover:bg-opacity-90 font-semibold transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 lg:py-24 bg-deep-teal text-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to start?</h2>
+        <p class="text-xl text-gray-100 mb-8">
+          Book a free 60-minute discovery call to discuss your project.
+        </p>
+        <a href="contact.html"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          Book a Discovery Call
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="../assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

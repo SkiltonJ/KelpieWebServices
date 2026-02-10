@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Premium web solutions for South Australian government agencies and medium businesses. Accessible, secure websites that meet Digital Experience Policy standards.">
+  <title>Kelpie Web Services - Your Digital Working Partner</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config with Brand Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-teal': '#006B7D',
+            'slate': '#3E4A5B',
+            'warm-sand': '#D4A574',
+            'sunset-orange': '#E67E33',
+            'off-white': '#F7F5F2',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-off-white text-slate font-sans antialiased">
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-deep-teal focus:text-white focus:rounded">Skip
+    to main content</a>
+
+  <!-- Header/Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="assets/images/logo-circle.png"
+              alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
+            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="pages/services.html"
+            class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="pages/how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="pages/about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="pages/faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="pages/contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            a Discovery Call</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button"
+          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-4">
+          <a href="pages/services.html"
+            class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
+          <a href="pages/how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            Work</a>
+          <a href="pages/about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
+          <a href="pages/faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="pages/contact.html"
+            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            a Discovery Call</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-24 lg:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+            Accessible, secure, reliable websites for South Australian government agencies
+          </h1>
+          <p class="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed">
+            Premium web solutions for South Australian government agencies and medium businesses. We deliver accessible,
+            secure websites that meet the new Digital Experience Policy standards without the agency price tag or
+            endless delays.
+          </p>
+          <a href="pages/contact.html"
+            class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+            Book a Discovery Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-16 text-center">Our Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+
+          <!-- Service 1: Government Website Development -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate mb-4">Government Website Development</h3>
+            <p class="text-slate leading-relaxed grow">
+              Full-service website development that meets WCAG 2.2 Level AA and Digital Experience Policy standards. We
+              deliver production-ready, secure websites in 8-10 weeks—complete with brand guidelines, content strategy,
+              and comprehensive documentation.
+            </p>
+            <a href="pages/services.html#government-development"
+              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              Learn more →
+            </a>
+          </div>
+
+          <!-- Service 2: Website Accessibility Audits -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate mb-4">Website Accessibility Audits & Compliance</h3>
+            <p class="text-slate leading-relaxed grow">
+              Already have a website? We'll audit your site against WCAG 2.2 standards, provide a detailed remediation
+              roadmap, and implement the necessary fixes to ensure you meet the January 2025 compliance deadline.
+            </p>
+            <a href="pages/services.html#accessibility-audits"
+              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              Learn more →
+            </a>
+          </div>
+
+          <!-- Service 3: Ongoing Support -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate mb-4">Ongoing Website Support & Maintenance</h3>
+            <p class="text-slate leading-relaxed grow">
+              Your digital working partner, on call when you need us. Security updates, content changes, performance
+              monitoring, and rapid response to issues. We keep your site running smoothly so you can focus on your
+              mission.
+            </p>
+            <a href="pages/services.html#ongoing-support"
+              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              Learn more →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="bg-gradient-to-r from-deep-teal to-sunset-orange h-1"></div>
+
+    <!-- Why Choose Kelpie Web Services Section -->
+    <section class="py-20 lg:py-28" style="background-color: #F5EFE7;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate mb-16 text-center">Why Choose Kelpie Web Services</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+
+          <!-- Subsection 1: Intelligent Problem Solvers -->
+          <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-deep-teal">
+            <h3 class="text-2xl font-bold text-slate mb-4">Intelligent Problem Solvers</h3>
+            <p class="text-slate leading-relaxed mb-4">
+              We're named after the Australian working dog because of Muffin, our founder's Kelpie, whose intelligence,
+              attentiveness, and drive inspired this business. Most agencies quote 6-12 months and $50-80K+. We deliver
+              production-ready websites in 8-10 weeks at 30-40% less cost, without cutting corners.
+            </p>
+            <!-- Placeholder for image of Muffin or working Kelpie -->
+            <!-- <div
+              class="bg-warm-sand bg-opacity-20 rounded-lg p-8 text-center text-slate italic border-2 border-dashed border-warm-sand">
+              [Image: Photo of Muffin, the black and tan Kelpie who inspired the business name]
+            </div> -->
+          </div>
+
+          <!-- Subsection 2: Direct Access, Fast Response -->
+          <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-sunset-orange">
+            <h3 class="text-2xl font-bold text-slate mb-4">Direct Access, Fast Response</h3>
+            <p class="text-slate leading-relaxed">
+              No layers of account managers or ticket systems. You get direct access to your project team—the people
+              actually building your site. Fast response times because that's how we work best: connected,
+              communicative, and always available when you need us.
+            </p>
+          </div>
+
+          <!-- Subsection 3: Clear, Honest Communication -->
+          <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-deep-teal">
+            <h3 class="text-2xl font-bold text-slate mb-4">Clear, Honest Communication</h3>
+            <p class="text-slate leading-relaxed">
+              Straightforward pricing with no hidden fees or surprise invoices. Clear communication so you always know
+              where you stand. We skip the corporate speak and tell it like it is. Our timelines are realistic because
+              we respect your time and schedule.
+            </p>
+          </div>
+
+          <!-- Subsection 4: Your Long-Term Partner -->
+          <div class="bg-white p-8 rounded-lg shadow-md border-l-4 border-sunset-orange">
+            <h3 class="text-2xl font-bold text-slate mb-4">Your Long-Term Partner</h3>
+            <p class="text-slate leading-relaxed">
+              We don't just hand over a website and disappear. You'll receive comprehensive documentation, brand
+              guidelines, and training so you can handle updates confidently. We're here when you need backup—loyal,
+              reliable, and ready to help.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <div class="bg-gradient-to-r from-warm-sand via-sunset-orange to-deep-teal h-1"></div>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 lg:py-24 bg-deep-teal text-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to get started?</h2>
+        <p class="text-xl text-gray-100 mb-8">
+          Book a free 60-minute discovery call. No obligation, just a conversation to see if we're the right fit for
+          your project.
+        </p>
+        <a href="pages/contact.html"
+          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          Book a Discovery Call
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Logo and Tagline -->
+        <div>
+          <img src="assets/images/logo-circle.png" alt="Kelpie Web Services" class="h-12 mb-4">
+          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
+          <p class="text-gray-300 text-sm">
+            Premium web solutions for South Australian government agencies and medium businesses.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="pages/services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
+            <li><a href="pages/how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
+            <li><a href="pages/about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
+            <li><a href="pages/faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
+            <li><a href="pages/contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4">Get in Touch</h3>
+          <p class="text-gray-300 mb-2">
+            <strong>Location:</strong> Adelaide, South Australia
+          </p>
+          <p class="text-gray-300 mb-4">
+            <strong>Response Time:</strong> Within one business day
+          </p>
+          <a href="pages/contact.html"
+            class="inline-block bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">
+            Book a Discovery Call
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
