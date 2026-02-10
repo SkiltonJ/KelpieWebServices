@@ -94,7 +94,7 @@ This site is built with accessibility as a priority:
 
 ## To-Do
 
-- [ ] Create remaining pages (Services, About, How We Work, Contact, FAQ)
+- [x] Create remaining pages (Services, About, How We Work, Contact, FAQ)
 - [ ] Add photo of Muffin to About page
 - [ ] Implement contact form with Formspree or EmailJS
 - [ ] Set up favicon
@@ -106,9 +106,6 @@ This site is built with accessibility as a priority:
 
 ---
 
-## Contact
-
-**Email**: jackson.jaensch14@gmail.com
 **Location**: Adelaide, South Australia
 
 ---
