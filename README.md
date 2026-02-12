@@ -96,12 +96,12 @@ This site is built with accessibility as a priority:
 
 - [x] Create remaining pages (Services, About, How We Work, Contact, FAQ)
 - [ ] Add photo of Muffin to About page
-- [ ] Implement contact form with Formspree or EmailJS
-- [ ] Set up favicon
+- [x] Implement contact form with Formspree or EmailJS
+- [x] Set up favicon
 - [ ] Add Google Analytics (if desired)
-- [ ] Test across browsers (Chrome, Firefox, Safari, Edge)
-- [ ] Run accessibility audit (WAVE, axe DevTools)
-- [ ] Optimize images for web
+- [x] Test across browsers (Chrome, Firefox, Safari, Edge)
+- [x] Run accessibility audit (WAVE, axe DevTools)
+- [x] Optimize images for web
 - [ ] Set up custom domain
 
 ---
