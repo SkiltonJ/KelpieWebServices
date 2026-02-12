@@ -407,46 +407,46 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate text-white py-12">
+  <footer class="bg-slate text-white py-12" role="contentinfo">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- Column 1: Logo and Tagline -->
         <div>
           <img src="../assets/images/logo-circle.webp" alt="Kelpie Web Services" class="h-12 mb-4">
-          <p class="text-sunset-orange font-semibold mb-2">Your Digital Working Partner</p>
-          <p class="text-gray-300 text-sm">
+          <p class="text-sunset-orange font-bold mb-2" aria-level="3" role="heading">Your Digital Working Partner</p>
+          <p class="text-gray-200 text-sm">
             Premium web solutions for South Australian government agencies and medium businesses.
           </p>
         </div>
 
-        <!-- Column 2: Quick Links -->
-        <div>
-          <h3 class="font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="services.html" class="hover:text-sunset-orange transition-colors">Services</a></li>
-            <li><a href="how-we-work.html" class="hover:text-sunset-orange transition-colors">How We Work</a></li>
-            <li><a href="about.html" class="hover:text-sunset-orange transition-colors">About</a></li>
-            <li><a href="faq.html" class="hover:text-sunset-orange transition-colors">FAQ</a></li>
-            <li><a href="contact.html" class="hover:text-sunset-orange transition-colors">Contact</a></li>
+        <nav aria-label="Footer links">
+          <h3 class="font-bold mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="services.html"
+                class="text-gray-200 hover:text-sunset-orange transition-colors py-1 inline-block">Services</a></li>
+            <li><a href="how-we-work.html"
+                class="text-gray-200 hover:text-sunset-orange transition-colors py-1 inline-block">How We Work</a></li>
+            <li><a href="about.html"
+                class="text-gray-200 hover:text-sunset-orange transition-colors py-1 inline-block">About</a></li>
+            <li><a href="faq.html"
+                class="text-gray-200 hover:text-sunset-orange transition-colors py-1 inline-block">FAQ</a></li>
+            <li><a href="contact.html"
+                class="text-gray-200 hover:text-sunset-orange transition-colors py-1 inline-block">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <!-- Column 3: Contact Info -->
-        <div>
-          <h3 class="font-bold mb-4">Get in Touch</h3>
-          <p class="text-gray-300 mb-2">
-            <strong>Location:</strong> Adelaide, South Australia
-          </p>
-          <p class="text-gray-300 mb-4">
-            <strong>Response Time:</strong> Within one business day
-          </p>
-        </div>
+        <section aria-labelledby="contact-heading">
+          <h3 id="contact-heading" class="font-bold mb-4 text-white">Get in Touch</h3>
+          <address class="not-italic text-gray-200 text-sm space-y-2">
+            <p><span class="font-semibold text-white">Location:</span> Adelaide, South Australia</p>
+            <p><span class="font-semibold text-white">Response Time:</span> Within one business day</p>
+          </address>
+        </section>
       </div>
 
-      <!-- Copyright -->
-      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; 2026 Kelpie Web Services. All rights reserved. ABN: [Your ABN Here]</p>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>&copy; 2026 Kelpie Web Services. All rights reserved. <span class="whitespace-nowrap">ABN: [Your ABN
+            Here]</span></p>
       </div>
     </div>
   </footer>
