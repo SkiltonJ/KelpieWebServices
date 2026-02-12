@@ -23,7 +23,7 @@
     to main content</a>
 
   <!-- Header/Navigation -->
-  <header class="bg-white shadow-sm sticky top-0 z-40">
+  <header class="bg-navbar-teal shadow-sm sticky top-0 z-40">
     <nav class="max-w-7xl mx-auto px-6 lg:px-8" aria-label="Main navigation">
       <div class="flex items-center justify-between h-20">
 
@@ -32,26 +32,26 @@
           <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src="assets/images/logo-circle.webp"
               alt="Kelpie Web Services logo - Kelpie dog wearing glasses inside a computer monitor" class="h-14 w-auto">
-            <span class="text-xl font-bold text-slate">Kelpie Web Services</span>
+            <span class="text-xl font-bold text-white">Kelpie Web Services</span>
           </a>
         </div>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center gap-8">
           <a href="pages/services.html"
-            class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
-          <a href="pages/how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            class="text-white hover:text-gray-200 font-medium transition-colors">Services</a>
+          <a href="pages/how-we-work.html" class="text-white hover:text-gray-200 font-medium transition-colors">How We
             Work</a>
-          <a href="pages/about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
-          <a href="pages/faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="pages/about.html" class="text-white hover:text-gray-200 font-medium transition-colors">About</a>
+          <a href="pages/faq.html" class="text-white hover:text-gray-200 font-medium transition-colors">FAQ</a>
           <a href="pages/contact.html"
-            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all">Book
+            class="bg-sunset-orange text-dark-teal px-6 py-2.5 rounded-md hover:bg-opacity-90 font-semibold transition-all">Book
             a Discovery Call</a>
         </div>
 
         <!-- Mobile menu button -->
         <button id="mobile-menu-button"
-          class="md:hidden text-slate hover:text-deep-teal focus:outline-none focus:ring-2 focus:ring-deep-teal rounded p-2"
+          class="md:hidden text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white rounded p-2"
           aria-label="Toggle mobile menu" aria-expanded="false">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -63,13 +63,13 @@
       <div id="mobile-menu" class="hidden md:hidden pb-4">
         <div class="flex flex-col gap-4">
           <a href="pages/services.html"
-            class="text-slate hover:text-deep-teal font-medium transition-colors">Services</a>
-          <a href="pages/how-we-work.html" class="text-slate hover:text-deep-teal font-medium transition-colors">How We
+            class="text-white hover:text-gray-200 font-medium transition-colors">Services</a>
+          <a href="pages/how-we-work.html" class="text-white hover:text-gray-200 font-medium transition-colors">How We
             Work</a>
-          <a href="pages/about.html" class="text-slate hover:text-deep-teal font-medium transition-colors">About</a>
-          <a href="pages/faq.html" class="text-slate hover:text-deep-teal font-medium transition-colors">FAQ</a>
+          <a href="pages/about.html" class="text-white hover:text-gray-200 font-medium transition-colors">About</a>
+          <a href="pages/faq.html" class="text-white hover:text-gray-200 font-medium transition-colors">FAQ</a>
           <a href="pages/contact.html"
-            class="bg-sunset-orange text-white px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all inline-block text-center">Book
+            class="bg-sunset-orange text-dark-teal px-6 py-2.5 rounded-md hover:bg-opacity-90 font-medium transition-all block text-center w-full">Book
             a Discovery Call</a>
         </div>
       </div>
@@ -80,7 +80,8 @@
   <main id="main-content">
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-deep-teal to-slate text-white py-24 lg:py-32">
+    <section class="relative bg-gradient-to-br from-deep-teal to-slate text-white py-24 lg:py-32"
+      style="border-bottom: 6px solid transparent; border-image: linear-gradient(90deg, #006B7D 0%, #FFDB0F 50%, #DB7900 100%) 1;">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="max-w-4xl">
           <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
@@ -92,7 +93,7 @@
             endless delays.
           </p>
           <a href="pages/contact.html"
-            class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+            class="inline-block md:hidden bg-sunset-orange text-dark-teal px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
             Book a Discovery Call
           </a>
         </div>
@@ -108,7 +109,7 @@
 
           <!-- Service 1: Government Website Development -->
           <div
-            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-sunset-orange hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -123,14 +124,14 @@
               and comprehensive documentation.
             </p>
             <a href="pages/services.html#government-development"
-              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              class="inline-block mt-6 text-deep-teal font-semibold hover:text-opacity-80 transition-colors">
               Learn more →
             </a>
           </div>
 
           <!-- Service 2: Website Accessibility Audits -->
           <div
-            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-sunset-orange hover:shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -143,14 +144,14 @@
               roadmap, and implement the necessary fixes to ensure you meet the January 2025 compliance deadline.
             </p>
             <a href="pages/services.html#accessibility-audits"
-              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              class="inline-block mt-6 text-deep-teal font-semibold hover:text-opacity-80 transition-colors">
               Learn more →
             </a>
           </div>
 
           <!-- Service 3: Ongoing Support -->
           <div
-            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-deep-teal shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
+            class="bg-white p-8 rounded-lg shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] border-l-4 border-sunset-orange shadow-[1px_2px_4px_2px_rgba(0,0,0,0.1)] transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-deep-teal rounded-lg flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -165,7 +166,7 @@
               mission.
             </p>
             <a href="pages/services.html#ongoing-support"
-              class="inline-block mt-6 text-sunset-orange font-semibold hover:text-opacity-80 transition-colors">
+              class="inline-block mt-6 text-deep-teal font-semibold hover:text-opacity-80 transition-colors">
               Learn more →
             </a>
           </div>
@@ -245,7 +246,7 @@
           your project.
         </p>
         <a href="pages/contact.html"
-          class="inline-block bg-sunset-orange text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
+          class="inline-block bg-sunset-orange text-dark-teal px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-sunset-orange focus:ring-opacity-50">
           Book a Discovery Call
         </a>
       </div>
