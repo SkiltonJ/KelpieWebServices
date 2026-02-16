@@ -2,7 +2,7 @@
 
 **Your Digital Working Partner**
 
-Premium web solutions for South Australian government agencies and medium businesses.
+Premium web solutions for South Australian government contracts and medium businesses.
 
 ---
 
