@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kelpiewebservices.com.au/sitemap.xml
